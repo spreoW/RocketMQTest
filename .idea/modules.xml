@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/rocketmq-test-consumer/rocketmq-test-consumer.iml" filepath="$PROJECT_DIR$/rocketmq-test-consumer/rocketmq-test-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmq-test-producer/rocketmq-test-producer.iml" filepath="$PROJECT_DIR$/rocketmq-test-producer/rocketmq-test-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmq-test-provider/rocketmq-test-provider.iml" filepath="$PROJECT_DIR$/rocketmq-test-provider/rocketmq-test-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-cousumer/springboot-dubbo-cousumer.iml" filepath="$PROJECT_DIR$/springboot-dubbo-cousumer/springboot-dubbo-cousumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-interface/springboot-dubbo-interface.iml" filepath="$PROJECT_DIR$/springboot-dubbo-interface/springboot-dubbo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-provider/springboot-dubbo-provider.iml" filepath="$PROJECT_DIR$/springboot-dubbo-provider/springboot-dubbo-provider.iml" />
     </modules>
   </component>
 </project>

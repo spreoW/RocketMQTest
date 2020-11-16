@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/rocketmq-test-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rocketmq-test-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-dubbo-cousumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-dubbo-provider" charset="UTF-8" />
   </component>
 </project>

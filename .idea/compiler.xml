@@ -10,6 +10,9 @@
         <module name="rocketmq-test-consumer" />
         <module name="rocketmq-test-producer" />
         <module name="rocketmq-test-provider" />
+        <module name="springboot-dubbo-cousumer" />
+        <module name="springboot-dubbo-interface" />
+        <module name="springboot-dubbo-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +20,9 @@
       <module name="rocketmq-test-consumer" target="1.8" />
       <module name="rocketmq-test-producer" target="1.8" />
       <module name="rocketmq-test-provider" target="1.8" />
+      <module name="springboot-dubbo-cousumer" target="1.8" />
+      <module name="springboot-dubbo-interface" target="1.5" />
+      <module name="springboot-dubbo-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
