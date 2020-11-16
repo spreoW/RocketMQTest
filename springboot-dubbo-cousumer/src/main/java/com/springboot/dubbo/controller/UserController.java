@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-    @Reference
-    private IUserServer userServer;
 
-    @RequestMapping("sayHello")
+    @Reference
+    private IUserServer userService;
+
+    @RequestMapping("/sayHello")
     public String sayHello(String name){
-        return userServer.sayHello(name);
+        return userService.sayHello(name);
     }
+
 }
