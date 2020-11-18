@@ -6,6 +6,18 @@
       <module fileurl="file://$PROJECT_DIR$/rocketmq-test-consumer/rocketmq-test-consumer.iml" filepath="$PROJECT_DIR$/rocketmq-test-consumer/rocketmq-test-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmq-test-producer/rocketmq-test-producer.iml" filepath="$PROJECT_DIR$/rocketmq-test-producer/rocketmq-test-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmq-test-provider/rocketmq-test-provider.iml" filepath="$PROJECT_DIR$/rocketmq-test-provider/rocketmq-test-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop.iml" filepath="$PROJECT_DIR$/shop/shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-api/shop-api.iml" filepath="$PROJECT_DIR$/shop/shop-api/shop-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-common/shop-common.iml" filepath="$PROJECT_DIR$/shop/shop-common/shop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-coupon-service/shop-coupon-service.iml" filepath="$PROJECT_DIR$/shop/shop-coupon-service/shop-coupon-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-goods-service/shop-goods-service.iml" filepath="$PROJECT_DIR$/shop/shop-goods-service/shop-goods-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-order-service/shop-order-service.iml" filepath="$PROJECT_DIR$/shop/shop-order-service/shop-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-order-web/shop-order-web.iml" filepath="$PROJECT_DIR$/shop/shop-order-web/shop-order-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-parent/shop-parent.iml" filepath="$PROJECT_DIR$/shop/shop-parent/shop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-pay-service/shop-pay-service.iml" filepath="$PROJECT_DIR$/shop/shop-pay-service/shop-pay-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-pay-web/shop-pay-web.iml" filepath="$PROJECT_DIR$/shop/shop-pay-web/shop-pay-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-pojo/shop-pojo.iml" filepath="$PROJECT_DIR$/shop/shop-pojo/shop-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop-user-service/shop-user-service.iml" filepath="$PROJECT_DIR$/shop/shop-user-service/shop-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-cousumer/springboot-dubbo-cousumer.iml" filepath="$PROJECT_DIR$/springboot-dubbo-cousumer/springboot-dubbo-cousumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-interface/springboot-dubbo-interface.iml" filepath="$PROJECT_DIR$/springboot-dubbo-interface/springboot-dubbo-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-provider/springboot-dubbo-provider.iml" filepath="$PROJECT_DIR$/springboot-dubbo-provider/springboot-dubbo-provider.iml" />

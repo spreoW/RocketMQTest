@@ -18,7 +18,7 @@ public class Consumer {
         //1.创建消费者Consumer，制定消费者组名
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("group1");
         //2.指定Nameserver地址
-        consumer.setNamesrvAddr("192.168.31.37:9876;192.168.31.38:9876");
+        consumer.setNamesrvAddr("134.98.104.247:9876;134.98.104.248:9876;");
         //3.订阅主题Topic和Tag
         consumer.subscribe("base", "*");
 

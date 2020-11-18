@@ -16,7 +16,7 @@ public class AsyncProducer {
         //1.创建消息生产者producer，并制定生产者组名
         DefaultMQProducer producer = new DefaultMQProducer("group1");
         //2.指定Nameserver地址
-        producer.setNamesrvAddr("192.168.31.37:9876;192.168.31.38:9876");
+        producer.setNamesrvAddr("134.98.104.247:9876;134.98.104.248:9876;");
         //3.启动producer
         producer.start();
 

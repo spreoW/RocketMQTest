@@ -3,6 +3,17 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/rocketmq-test-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rocketmq-test-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-coupon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-goods-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-order-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-pay-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-pay-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop/shop-user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-dubbo-cousumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-dubbo-provider" charset="UTF-8" />
   </component>

@@ -10,6 +10,18 @@
         <option value="$PROJECT_DIR$/springboot-dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-dubbo-cousumer/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-common/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-coupon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-goods-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-order-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-pay-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-pay-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/shop-user-service/pom.xml" />
       </list>
     </option>
   </component>
