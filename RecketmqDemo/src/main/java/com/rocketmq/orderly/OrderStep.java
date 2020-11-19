@@ -41,6 +41,17 @@ public class OrderStep {
         List<OrderStep> orderList = new ArrayList<OrderStep>();
 
         OrderStep orderDemo = new OrderStep();
+        orderDemo.setOrderId(16L);
+        orderDemo.setDesc("创建");
+        orderList.add(orderDemo);
+
+        orderDemo = new OrderStep();
+        orderDemo.setOrderId(8L);
+        orderDemo.setDesc("创建");
+        orderList.add(orderDemo);
+
+        orderDemo = new OrderStep();
+       /* OrderStep orderDemo = new OrderStep();
         orderDemo.setOrderId(1039L);
         orderDemo.setDesc("创建");
         orderList.add(orderDemo);
@@ -88,7 +99,7 @@ public class OrderStep {
         orderDemo = new OrderStep();
         orderDemo.setOrderId(1039L);
         orderDemo.setDesc("完成");
-        orderList.add(orderDemo);
+        orderList.add(orderDemo);*/
 
         return orderList;
     }

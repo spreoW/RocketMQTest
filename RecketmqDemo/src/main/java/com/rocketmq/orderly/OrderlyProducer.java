@@ -15,40 +15,44 @@ import java.util.List;
 /**
  * @author w
  * @date 2020/11/18
- * Ä¬ÈÏµÄÇé¿öÏÂÏûÏ¢·¢ËÍ»á²ÉÈ¡Round RobinÂÖÑ¯·½Ê½°ÑÏûÏ¢·¢ËÍµ½²»Í¬µÄqueue(·ÖÇø¶ÓÁĞ)£»¶øÏû·ÑÏûÏ¢µÄÊ±ºò´Ó¶à¸öqueueÉÏÀ­È¡ÏûÏ¢
- * µ«ÊÇÈç¹û¿ØÖÆ·¢ËÍµÄË³ĞòÏûÏ¢Ö»ÒÀ´Î·¢ËÍµ½Í¬Ò»¸öqueueÖĞ£¬Ïû·ÑµÄÊ±ºòÖ»´ÓÕâ¸öqueueÉÏÒÀ´ÎÀ­È¡£¬Ôò¾Í±£Ö¤ÁËË³Ğò¡£
- * µ±·¢ËÍºÍÏû·Ñ²ÎÓëµÄqueueÖ»ÓĞÒ»¸ö£¬ÔòÊÇÈ«¾ÖÓĞĞò£»Èç¹û¶à¸öqueue²ÎÓë£¬ÔòÎª·ÖÇøÓĞĞò£¬¼´Ïà¶ÔÃ¿¸öqueue£¬ÏûÏ¢¶¼ÊÇÓĞĞòµÄ¡£
+ * é»˜è®¤çš„æƒ…å†µä¸‹æ¶ˆæ¯å‘é€ä¼šé‡‡å–Round Robinè½®è¯¢æ–¹å¼æŠŠæ¶ˆæ¯å‘é€åˆ°ä¸åŒçš„queue(åˆ†åŒºé˜Ÿåˆ—)ï¼›è€Œæ¶ˆè´¹æ¶ˆæ¯çš„æ—¶å€™ä»å¤šä¸ªqueueä¸Šæ‹‰å–æ¶ˆæ¯
+ * ä½†æ˜¯å¦‚æœæ§åˆ¶å‘é€çš„é¡ºåºæ¶ˆæ¯åªä¾æ¬¡å‘é€åˆ°åŒä¸€ä¸ªqueueä¸­ï¼Œæ¶ˆè´¹çš„æ—¶å€™åªä»è¿™ä¸ªqueueä¸Šä¾æ¬¡æ‹‰å–ï¼Œåˆ™å°±ä¿è¯äº†é¡ºåºã€‚
+ * å½“å‘é€å’Œæ¶ˆè´¹å‚ä¸çš„queueåªæœ‰ä¸€ä¸ªï¼Œåˆ™æ˜¯å…¨å±€æœ‰åºï¼›å¦‚æœå¤šä¸ªqueueå‚ä¸ï¼Œåˆ™ä¸ºåˆ†åŒºæœ‰åºï¼Œå³ç›¸å¯¹æ¯ä¸ªqueueï¼Œæ¶ˆæ¯éƒ½æ˜¯æœ‰åºçš„ã€‚
  */
 public class OrderlyProducer {
     public static void main(String[] args) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
 
-        //1.´´½¨product£¬Ö¸¶¨Éú²ú×é
+        //1.åˆ›å»ºproductï¼ŒæŒ‡å®šç”Ÿäº§ç»„
         DefaultMQProducer producer = new DefaultMQProducer("group1");
-        //2.Ö¸¶¨NameServerµØÖ·
-        producer.setNamesrvAddr("134.98.104.247:9876;134.98.104.248:9876");
-        //3.¹¹½¨ÏûÏ¢¼¯ºÏ
-        List<OrderStep> orderSteps = new ArrayList<OrderStep>();
-        //4.·¢ËÍÏûÏ¢
+        //2.æŒ‡å®šNameServeråœ°å€
+        producer.setNamesrvAddr("192.168.31.37:9876;192.168.31.38:9876");
+        //3.å¼€å¯ç”Ÿäº§è€…
+        producer.start();
+        //4.æ„å»ºæ¶ˆæ¯é›†åˆ
+        List<OrderStep> orderSteps = OrderStep.buildOrders();
+        //5.å‘é€æ¶ˆæ¯
         for (int i = 0; i < orderSteps.size(); i++) {
             String body = orderSteps.get(i) + "";
             Message message = new Message("OrderTopic","Order","i"+i,body.getBytes());
             /**
-             * ²ÎÊıÒ»£ºÏûÏ¢¶ÔÏó
-             * ²ÎÊı¶ş£ºÏûÏ¢¶ÓÁĞµÄÑ¡ÔñÆ÷
-             * ²ÎÊıÈı£ºÑ¡Ôñ¶ÓÁĞµÄÒµÎñ±êÊ¶£¨¶©µ¥ID£©
+             * å‚æ•°ä¸€ï¼šæ¶ˆæ¯å¯¹è±¡
+             * å‚æ•°äºŒï¼šæ¶ˆæ¯é˜Ÿåˆ—çš„é€‰æ‹©å™¨
+             * å‚æ•°ä¸‰ï¼šé€‰æ‹©é˜Ÿåˆ—çš„ä¸šåŠ¡æ ‡è¯†ï¼ˆè®¢å•IDï¼‰
              */
             SendResult sendResult = producer.send(message, new MessageQueueSelector() {
                 @Override
                 public MessageQueue select(List<MessageQueue> list, Message message, Object arg) {
-                    String argString = (String) arg;
+                    String argString = String.valueOf(arg);
                     long orderId = Long.valueOf(argString);
+                    System.out.println("ã€orderIdï¼šã€‘" + orderId);
                     long index = orderId % list.size();
+                    System.out.println("ã€indexï¼šã€‘" + index);
                     return list.get((int) index);
                 }
             }, orderSteps.get(i).getOrderId());
-            System.out.println("·¢ËÍ½á¹û£º" + sendResult);
+            System.out.println("å‘é€ç»“æœï¼š" + sendResult);
         }
-        //5.¹Ø±ÕÉú²úÕß
+        //6.å…³é—­ç”Ÿäº§è€…
         producer.shutdown();
     }
 }
